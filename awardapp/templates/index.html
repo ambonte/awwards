@@ -7,15 +7,15 @@
 <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Kodchasan|Spirax|Abril+Fatface" rel="stylesheet">
 <header>
   <div class="header">
-    <img src="static/image/images (9).jpeg" id="im">
+    <img src="https://miro.medium.com/max/400/1*bNfxs62uJzISTfuPlOzOWQ.png" id="im" style="height: 25vh;">
     <div class="text">
       <p  style="font-family: cursive; text-align: center;">Site of the day on October 24,2019 </p>
      
     </div>
-    <h1 id="aw">Award Application</h1>
+    <h1 id="aw">AWAARD</h1>
     <div class="bt">
-        <button class="btn btn-success" style="border-radius:25px;"><a href="{% url 'homePage' %}">visite site</a></button>
-        <button class="btn btn-outline-primary" style="border-radius:25px;">collect</button>
+        <button class="btn btn-warning" style="border-radius:25px;"><a href="{% url 'homePage' %}">visite site</a></button>
+        <!--<button class="btn btn-outline-primary" style="border-radius:25px;">collect</button>-->
     </div>
     
 
@@ -65,7 +65,7 @@
 </div>
 </div>
 
-  <div class="jumbotron text-center mt-0" style="background-color:white;width: 30%; text-align: center; margin-left: 25%;">
+  <div class="jumbotron text-center mt-0" style="background-color:blueviolet;width: 30%; text-align: center; margin-left: 25%;">
     <form action="{% url 'homePage' %}" method="post" id="fora">
       {%csrf_token%}
       {% bootstrap_form letterForm %}
@@ -74,7 +74,7 @@
     </form>
 
   </div>
-  <footer style="background-color: grey;">
+  <footer style="background-color:blueviolet;">
   <div class="container" >
   
    
@@ -135,8 +135,8 @@
       left:50%;
       transform: translate(-50%,-50%);
       color:white;
-      font-size:50px;
-      font-family:'Grand Hotel',cursive ;
+      font-size:80px;
+      
     }
     .image:hover{
         box-shadow: 0 1px 328px rgba(0, 0, 0, 0.25),0 1px 2px rgba(0, 0, 0, 0.22);
